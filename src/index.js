@@ -9,8 +9,10 @@ import reducers from './reducers';
 
 const store = createStore(reducers, applyMiddleware(ReduxThunk));
 
+const SOCKET_URL = 'https://web-chat-api.herokuapp.com/'
+
 ReactDOM.render(
   <Provider store={store}>
-    <Chat />
+    <Chat socketUrl={SOCKET_URL} />
   </Provider>, 
 document.getElementById('app'));

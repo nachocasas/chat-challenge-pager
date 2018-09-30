@@ -14,8 +14,6 @@ import ChatInput from './ChatInput';
 import UsernamePropmtModal from './UsernamePropmtModal';
 import { WhoIsTyping } from './WhoIsTyping'
 
-const SOCKET_URL = 'http://localhost:3000'
-
 class Chat extends Component {
   
   constructor(props){
@@ -27,7 +25,7 @@ class Chat extends Component {
   }
 
   setUserAndConnect(username){
-    this.socket = io.connect(SOCKET_URL, { query: 'username='+username});
+    this.socket = io.connect(this.props.socketUrl, { query: 'username='+username});
     this.props.setUsername(username);
     this.fireEventListeners();
   }
