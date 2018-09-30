@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UsernamePropmtModal /> render() render component 1`] = `
+<div
+  className="username-modal"
+>
+  <div
+    className="prompt"
+  >
+    <h3>
+      Please enter your username:
+    </h3>
+    <input
+      onChange={[Function]}
+      onKeyPress={[Function]}
+    />
+    <button
+      onClick={[Function]}
+    >
+      Chat!
+    </button>
+  </div>
+</div>
+`;

@@ -1,0 +1,28 @@
+.history {
+  width: 100%;
+  padding: 1%;
+  height: 70vh;
+  overflow: hidden;
+  background-color: $history-background-color;
+  font-size: 0.9rem;
+
+  &:hover {
+    overflow-y: auto;
+  }
+
+  ul {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0.5% 0;
+    color: $history-text-color;
+  }
+
+  span {
+    font-weight: bold;
+    color: $history-username-color;
+  }
+}

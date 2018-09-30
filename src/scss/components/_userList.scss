@@ -1,0 +1,40 @@
+.userlist {
+
+  padding: 0;
+  height: 70vh;
+  overflow: hidden;
+  background-color: $userlist-background-color;
+
+  &:hover {
+    overflow-y: auto;
+  }
+
+  h3 {
+    margin: 0;
+    padding: 1% 5%;
+    font-size: 1rem;
+    background-color: $history-background-color;
+    color: $wit-color;
+  }
+
+  ul {
+    margin: 0;
+    padding: 5%;
+    list-style-type: none;
+  }
+
+  li {
+    padding: 3% 5%;
+    color: $userlist-username-color;
+    cursor: pointer;
+
+    &.current-user {
+      color: $wit-color;
+      font-weight: bold;
+    }
+
+    &.even {
+      background-color: $history-background-color
+    }
+  }
+}

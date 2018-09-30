@@ -1,0 +1,42 @@
+@import 'base/color.scss';
+@import 'base/reset.scss';
+
+body {
+  background-color: $background-color;
+}
+
+.chat-app {
+  @import 'components/usernamePromptModal.scss';
+  @import 'components/history.scss';
+  @import 'components/chatInput.scss';
+  @import 'components/whoIsTyping.scss';
+  @import 'components/userList.scss';
+
+  font-family: "Droid Sans";
+
+  .header{
+    height: 10vh;
+    padding: 1%;
+    color: $history-text-color;
+    border-bottom: 10px;
+    border-color: #181818;
+
+    h1 {
+      margin:0;
+    }
+  }
+
+  .main-content {
+    display: flex;
+  }
+
+  .left-container {
+   flex:5;
+  }
+
+  .right-container {
+    flex:1;
+    padding-left: 2%;
+  }
+
+}

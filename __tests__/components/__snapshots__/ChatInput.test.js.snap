@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ChatInput /> render() render component 1`] = `
+<div
+  className="chatinput"
+>
+  <input
+    onChange={[Function]}
+    onKeyPress={[Function]}
+    value=""
+  />
+</div>
+`;
