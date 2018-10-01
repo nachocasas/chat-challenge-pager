@@ -33,11 +33,14 @@ export default class UsernamePropmtModal extends Component {
 
   render(){
     return(
-      <div className="username-modal">
+      <div>
+        <div className="username-modal"></div>
         <div className='prompt'>
-          <h3>Please enter your username:</h3>
-          <input onChange={ this.handleChange } onKeyPress={ this.handleEnter }></input>
-          <button onClick={ this.handleSubmit }>Chat!</button>
+          <div className='formWrapper'>
+            <h3>Please enter your username:</h3>
+            <input autoFocus={true} onChange={ this.handleChange } onKeyPress={ this.handleEnter }></input>
+            <button onClick={ this.handleSubmit }>Chat!</button>
+          </div>
         </div>
       </div>
     )

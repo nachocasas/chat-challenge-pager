@@ -9,5 +9,10 @@ exports[`<ChatInput /> render() render component 1`] = `
     onKeyPress={[Function]}
     value=""
   />
+  <button
+    onClick={[Function]}
+  >
+    Send
+  </button>
 </div>
 `;

@@ -5,6 +5,10 @@ $break-small: 600px;
 
 body {
   background-color: $background-color;
+  font-size: 1rem;
+  @media all and (max-width: $break-small) {
+    font-size: 0.8rem;
+  }
 }
 
 .chat-app {
@@ -48,7 +52,7 @@ body {
     flex:1;
     padding-left: 2%;
 
-    
+
     @media all and (max-width: $break-small) {
       flex: none;
       padding-left: 0;
