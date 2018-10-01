@@ -9,6 +9,12 @@
     overflow-y: auto;
   }
 
+  @media all and (max-width: $break-small) {
+    margin-top: 5%;
+    height: auto;
+    overflow: auto;
+  }
+
   h3 {
     margin: 0;
     padding: 1% 5%;
@@ -27,6 +33,10 @@
     padding: 3% 5%;
     color: $userlist-username-color;
     cursor: pointer;
+
+    @media all and (max-width: $break-small) {
+      font-size: 0.8rem;
+    }
 
     &.current-user {
       color: $wit-color;

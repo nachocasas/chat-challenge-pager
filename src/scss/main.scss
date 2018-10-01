@@ -1,6 +1,8 @@
 @import 'base/color.scss';
 @import 'base/reset.scss';
 
+$break-small: 600px;
+
 body {
   background-color: $background-color;
 }
@@ -28,15 +30,29 @@ body {
 
   .main-content {
     display: flex;
+
+    @media all and (max-width: $break-small) {
+      display: block;
+    }
   }
 
   .left-container {
    flex:5;
+
+   @media all and (max-width: $break-small) {
+     flex: none;
+   }
   }
 
   .right-container {
     flex:1;
     padding-left: 2%;
+
+    
+    @media all and (max-width: $break-small) {
+      flex: none;
+      padding-left: 0;
+    }
   }
 
 }

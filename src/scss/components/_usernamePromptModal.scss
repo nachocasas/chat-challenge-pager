@@ -1,5 +1,8 @@
 .username-modal {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width:100%;
   height: 100vh;
   top:0;
@@ -9,16 +12,22 @@
   z-index: 9999;
 
   .prompt {
-    position: absolute;
-    top: 42%;
-    left: 35%;
-    width: 30%;
+    width: 50%;
     padding: 2%;
     background-color: #FFF;
+
+    @media all and (max-width: $break-small) {
+      width: 80%;
+    }
 
     h3 {
       margin:0 0 2% 0;
       font-size: 1rem;
+
+      @media all and (max-width: $break-small) {
+        font-size: 1rem;
+      }
+  
     }
 
     input {

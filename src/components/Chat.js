@@ -55,7 +55,7 @@ class Chat extends Component {
     const whoIsTyping = this.whoIsTyping();
     return(
       <div className="chat-app">
-        { !this.props.connected && <UsernamePropmtModal onUsernameEnter = { this.setUserAndConnect } /> }
+        { !this.props.username && <UsernamePropmtModal onUsernameEnter = { this.setUserAndConnect } /> }
         <div className="header">
           <h1>Pager challenge chat</h1>
         </div>

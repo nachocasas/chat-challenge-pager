@@ -9,6 +9,7 @@ export default class ChatInput extends Component {
     this.tipingTimeOut = null;
     this.handleChange = this.handleChange.bind(this);
     this.handleEnter = this.handleEnter.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange(e) {
@@ -27,7 +28,13 @@ export default class ChatInput extends Component {
 
   handleEnter(e){
     const code = (e.keyCode ? e.keyCode : e.which)
-    if(code == 13 && this.state.text.trim() != ''){
+    if(code == 13){
+      this.handleSubmit();
+    }
+  }
+
+  handleSubmit(e){
+    if(this.state.text.trim() != ''){
       this.props.onEnter(this.state.text);
       this.setState({ text: '' });
     }
@@ -37,6 +44,7 @@ export default class ChatInput extends Component {
     return(
       <div className="chatinput">
         <input onChange={ this.handleChange } onKeyPress={ this.handleEnter } value={this.state.text} />
+        <button onClick={ this.handleSubmit }>Send</button>
       </div>
     )
   }
